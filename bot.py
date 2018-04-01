@@ -17,6 +17,14 @@ import json
 bot = commands.Bot(command_prefix=commands.when_mentioned_or('_'),description="TheEmperor™'s Discord bot.\n\nHelp Commands",owner_id=250674147980607488)
 
 
+startup_extensions = [
+
+    'cogs.',
+    'cogs.',
+    'cogs.'
+
+]
+
 
 @bot.event
 async def on_ready():
@@ -178,6 +186,16 @@ async def github(ctx):
 async def lit(ctx):
     """You lit? Use this command!"""
     await ctx.send("**Only the lit people can listen to this! http://bit.ly/2r3aFyX**")	
+	
+	
+if __name__ == "__main__":
+    for extension in startup_extensions:
+        try:
+            bot.load_extension(extension)
+            print('Loaded extension: {}'.format(extension))
+        except Exception as e:
+            exc = '{}: {}'.format(type(e).__name__, e)
+            print('Failed to load extension {}\n{}'.format(extension, exc))
 
 if not os.environ.get('TOKEN'):
    print("no token found REEEE!")
