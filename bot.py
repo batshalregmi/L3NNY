@@ -15,6 +15,8 @@ from contextlib import redirect_stdout
 from discord.ext import commands
 import json
 bot = commands.Bot(command_prefix=commands.when_mentioned_or('_'),description="TheEmperor™'s Discord bot.\n\nHelp Commands",owner_id=250674147980607488)
+bot.load_extension("cogs.fun")
+
 
 @bot.event
 async def on_ready():
