@@ -13,15 +13,6 @@ from discord.ext import commands
 class fun:
     def __init__(self, bot):
         self.bot = bot
-        with open('data/apikeys.json') as f:
-            lol = json.load(f)
-            self.client = lol.get("idioticapi")
-
-
-    def format_avatar(self, avatar_url):
-        if avatar_url.endswith(".gif"):
-            return avatar_url + "?size=2048"
-        return avatar_url.replace("webp","png")
         
         
         
