@@ -28,7 +28,7 @@ class fun:
         
         
         
-        @commands.command()
+    @commands.command()
     async def annoy(self, ctx, user: discord.Member):
         """ping someone"""
         msg = await ctx.send(f"rip {user}")
