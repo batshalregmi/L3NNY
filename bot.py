@@ -19,7 +19,7 @@ bot = commands.Bot(command_prefix=commands.when_mentioned_or('_'),description="T
 
 startup_extensions = [
 
-    'cogs.',
+    'cogs.fun',
     'cogs.',
     'cogs.'
 
