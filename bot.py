@@ -88,7 +88,7 @@ async def upvote(ctx):
 @bot.command()
 async def expose(ctx):
     """someone got expose"""
-    await ctx.send ("Shut up {user.mentiom}! Stop lying! I **know** that you have been cheating on Venessia and dating Charlie's girlfriend! ~~even saw you and Charlie's girlfriend h00king uP in a BARN~~ So, {user.mention}, STOP LYING TO CHARLIE OR HE WILL SUE YOU FOR SEXUAL ALLIGATIONS FOR DATING HIS GIRL! ~~not even sure if yu can do that tho~~") 
+    await ctx.send ("Shut up {user.mention}! I **know** that you have been cheating on Venessia and dating Charlie's girlfriend! ~~even saw you and Charlie's girlfriend h00king uP in a BARN~~ So, {user.mention}, STOP LYING TO CHARLIE OR HE WILL SUE YOU FOR SEXUAL ALLIGATIONS FOR DATING HIS GIRL! ~~not even sure if yu can do that tho~~") 
 	
 
 @bot.command()
